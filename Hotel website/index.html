@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Drinkify | home</title>
-	<link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu sans mono">
 	<style type="text/css">
 		*{
-			font-family: "Fira Code";
+			font-family: "Ubuntu Sans Mono";
 		}
 
 		body{
@@ -23,7 +23,7 @@
 			padding-right: 8px;
 			color: black;
 			text-decoration: none;
-			transition: 200ms;
+			transition: 400ms;
 		}
 
 		.topmenu a:hover{
@@ -41,7 +41,6 @@
 		.card{
 			height: auto;
 			padding: 10px;
-			display: inline-block;
 			border: 2px solid lightgrey;
 			text-align: center;
 			margin-right: 10px;
@@ -52,109 +51,135 @@
 <body>
 	<h2 style="text-decoration: underline; font-style: italic;">Drinkify</h2>
 	<div class="topmenu">
+		<!-- This topmenu has no function -->
 		<a href="">Home</a>
 		<a href="">About</a>
 		<a href="">Featured</a>
 	</div>
 	<div class="main">
+		<input type="text" style="font-size: large; width: 300px;" placeholder="Search for soft drinks.." id="searchtext">
+		<button onclick="search()" style="font-size: larger;">Search</button>
+
 		<div class="imgs">
-			<div class="card">
+			<div class="card" id="coffee">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\coffee.jpeg"><br>				
 				<p>Coffee</p>
 			</div>
-			<div class="card">
+			<div class="card" id="cold coffee">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\cold-coffee.webp"><br>
 				<p>Cold Coffee</p>
 			</div>
-			<div class="card">
+			<div class="card" id="falooda">
 				<img width="200" src="C:\Coding\HTML\Hotel website\assets\falooda.jpg"><br>
 				<p>Falooda</p>
 			</div>
-			<div class="card">
+			<div class="card" id="tea">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\tea.webp">
 				<p>Tea</p>
 			</div>
-			<div class="card">
+			<div class="card" id="nungu sarbath">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\nungu-sarbath.webp">
 				<p>Nungu sarbath</p>
 			</div>
-			<div class="card">
+			<div class="card" id="mango frootie">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\mango-frooti.jpg">
 				<p>Mango frootie</p>
 			</div>
-			<div class="card">
+			<div class="card" id="orange juice">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\orangejuice.jpg">
 				<p>Orange Juice</p>
 			</div>
-			<div class="card">
+			<div class="card" id="mango shake">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\mangoshake.jpg">
 				<p>Mango Shake</p>
 			</div>
-			<div class="card">
+			<div class="card" id="chocolate shake">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\chocolateshake.webp">
 				<p>Chocolate Shake</p>
 			</div>
-			<div class="card">
+			<div class="card" id="oreo shake">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\orioshake.webp">
 				<p>Oreo Shake</p>
 			</div>
-			<div class="card">
+			<div class="card" id="nannari syrup">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\nannarisyrup.jpg">
 				<p>Nannari Syrup</p>
 			</div>
-			<div class="card">
+			<div class="card" id="blue mojito">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\mojito.jpg">
 				<p>Blue Mojito</p>
 			</div>
-			<div class="card">
+			<div class="card" id="apple juice">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\applejuice.jpg">
 				<p>Apple Juice</p>
 			</div>
-			<div class="card">
+			<div class="card" id="vanilla shake">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\vanillashake.jpg">
 				<p>Vannila Shake</p>
 			</div>
-			<div class="card">
+			<div class="card" id="bubble tea">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\bubble-tea.webp">
 				<p>Bubble Tea</p>
 			</div>
-			<div class="card">
+			<div class="card" id="badam kulfi">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\badam-kulfi.jpg">
 				<p>Badam Kulfi</p>
 			</div>
-			<div class="card">
+			<div class="card" id="badam milk">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\badam-milk.jpg">
 				<p>Badam Milk</p>
 			</div>
-			<div class="card">
+			<div class="card" id="rose milk">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\rosemilk.jpg">
 				<p>Rose Milk</p>
 			</div>
-			<div class="card">
+			<div class="card" id="slush">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\slush.jpg">
 				<p>Slush</p>
 			</div>
-			<div class="card">
+			<div class="card" id="chocolate ice cream">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\chocolateicecream.jpg">
 				<p>Chocolate Ice Cream</p>
 			</div>
-			<div class="card">
+			<div class="card" id="water melon juice">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\watermelonjuice.webp">
 				<p>Watermelon juice</p>
 			</div>
-			<div class="card">
+			<div class="card" id="orange shake">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\orangeshake.jpg">
 				<p>Orange Shake</p>
 			</div>
-			<div class="card">
+			<div class="card" id="banana milkshake">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\bananamilkshake.jpg">
 				<p>Banana Shake</p>
 			</div>
-			<div class="card">
+			<div class="card" id="pineapple coconut juice">
 				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\pcj.webp">
 				<p>Pineapple Coconut Juice</p>
+			</div><br>
+			<div class="card" id="mango lassi">
+				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\mangolassi.jpg">
+				<p>Mango Lassi</p>
+			</div>
+			<div class="card" id="ice cola">
+				<img width="200" height="200" src="C:\Coding\HTML\Hotel website\assets\cola.png">
+				<p>Ice Cola</p>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		function search(){
+			var cards = document.getElementsByClassName("card");
+			var searchQuery = document.getElementById("searchtext").value;
+			for (var i = 0; i < cards.length; i++) {
+				var temp1 = cards[i].id;
+				if (!(temp1.includes(searchQuery.toLowerCase()))) {
+					cards[i].style.display = "none";
+				}else{
+					cards[i].style.display = "block";
+				}
+			}
+		}
+	</script>
 </body>
 </html>
